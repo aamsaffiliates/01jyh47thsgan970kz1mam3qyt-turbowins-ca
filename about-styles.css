@@ -1,0 +1,597 @@
+/* Additional styles for About page */
+
+/* Active navigation state */
+.nav-link.active {
+  color: #c721c9;
+  background: rgba(199, 33, 201, 0.2);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 2px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: statCardEntrance 0.8s ease-out;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(199, 33, 201, 0.4);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #c721c9;
+  text-shadow: 0 0 20px rgba(199, 33, 201, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #cccccc;
+  font-weight: bold;
+}
+
+@keyframes statCardEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Company Details */
+.company-details,
+.licensing-details {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(199, 33, 201, 0.2);
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.detail-item strong {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.detail-item span {
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Value Cards */
+.value-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: valueCardEntrance 0.6s ease-out;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(199, 33, 201, 0.3);
+}
+
+.value-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #c721c9, #8a2be2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: white;
+  animation: iconPulse 2s ease-in-out infinite;
+}
+
+.value-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c721c9;
+  margin-bottom: 1rem;
+}
+
+.value-description {
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+@keyframes valueCardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Team Cards */
+.team-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: teamCardEntrance 0.6s ease-out;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(199, 33, 201, 0.3);
+}
+
+.team-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(45deg, #c721c9, #8a2be2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.team-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.team-position {
+  font-size: 1rem;
+  color: #c721c9;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.team-bio {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@keyframes teamCardEntrance {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Tech Features */
+.tech-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.tech-feature {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background: rgba(199, 33, 201, 0.1);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.tech-feature:hover {
+  background: rgba(199, 33, 201, 0.2);
+  transform: translateX(5px);
+}
+
+/* Tech Stats */
+.tech-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.tech-stat-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 2px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.tech-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(199, 33, 201, 0.3);
+}
+
+.tech-stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #c721c9;
+  text-shadow: 0 0 15px rgba(199, 33, 201, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+.tech-stat-label {
+  font-size: 0.9rem;
+  color: #cccccc;
+  font-weight: bold;
+}
+
+/* Partnership Cards */
+.partnership-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.partnership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(199, 33, 201, 0.3);
+}
+
+.partnership-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c721c9;
+  margin-bottom: 1rem;
+}
+
+.partnership-description {
+  color: #cccccc;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.partnership-list {
+  list-style: none;
+  padding: 0;
+}
+
+.partnership-list li {
+  padding: 0.5rem 0;
+  color: #cccccc;
+  display: flex;
+  align-items: center;
+}
+
+/* Award Cards */
+.award-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  animation: awardCardEntrance 0.6s ease-out;
+}
+
+.award-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(199, 33, 201, 0.3);
+}
+
+.award-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(45deg, #ffd700, #ffb347);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  font-size: 2rem;
+  color: #1a0f46;
+  animation: awardPulse 2s ease-in-out infinite;
+}
+
+.award-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.award-organization {
+  font-size: 1rem;
+  color: #c721c9;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.award-description {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+@keyframes awardCardEntrance {
+  from {
+    opacity: 0;
+    transform: rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes awardPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+  }
+}
+
+/* Community Stats */
+.community-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.community-stat {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(199, 33, 201, 0.1);
+  border-radius: 12px;
+  border: 1px solid #c721c9;
+}
+
+.community-stat .stat-number {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #c721c9;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.community-stat .stat-label {
+  color: #cccccc;
+  font-size: 0.9rem;
+}
+
+/* Initiative Cards */
+.community-initiatives {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.initiative-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(199, 33, 201, 0.3);
+}
+
+.initiative-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.initiative-description {
+  color: #cccccc;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Contact Cards */
+.contact-card {
+  background: linear-gradient(135deg, #1a0f46, #2a1a5e);
+  border: 1px solid #c721c9;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(199, 33, 201, 0.3);
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c721c9;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-details {
+  space-y: 1.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(199, 33, 201, 0.2);
+}
+
+.contact-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.contact-item div {
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+.contact-item strong {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-grid,
+  .tech-stats,
+  .community-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .tech-features {
+    grid-template-columns: 1fr;
+  }
+
+  .community-initiatives {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number,
+  .tech-stat-number {
+    font-size: 2rem;
+  }
+
+  .team-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+  }
+
+  .award-icon,
+  .value-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-card,
+  .tech-stat-card,
+  .team-card,
+  .award-card,
+  .value-card {
+    padding: 1.5rem;
+  }
+
+  .content-card,
+  .partnership-card,
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .stat-number,
+  .tech-stat-number {
+    font-size: 1.5rem;
+  }
+
+  .team-name,
+  .award-title,
+  .value-title {
+    font-size: 1.2rem;
+  }
+}
+
+/* Animation Delays */
+.stat-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.stat-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.stat-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.stat-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.value-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.value-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.value-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.team-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.team-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.team-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.team-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.team-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.team-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.award-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.award-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.award-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.award-card:nth-child(4) {
+  animation-delay: 0.4s;
+}

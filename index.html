@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboWins Casino Canada - 200% Bonus + 50 Free Spins | Best Online Casino</title>
+    <meta name="description" content="Join TurboWins Casino Canada and claim your 200% welcome bonus up to C$1,200 + 50 free spins. Play premium slots, enjoy 10% weekly cashback, and experience the ultimate gaming thrill.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="TurboWins Casino Canada - 200% Bonus + 50 Free Spins">
+    <meta property="og:description" content="Join TurboWins Casino Canada and claim your 200% welcome bonus up to C$1,200 + 50 free spins. Play premium slots, enjoy 10% weekly cashback.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://turbowins.ca">
+    <meta property="og:image" content="https://turbowins.ca/images/hero.webp">
+    <meta property="og:locale" content="en_CA">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-purple': '#1a0f46',
+                        'neon-pink': '#c721c9',
+                        'neon-blue': '#00f5ff',
+                        'neon-purple': '#8a2be2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-card"><i class="fas fa-spade-suit"></i></div>
+        <div class="floating-chip"></div>
+        <div class="floating-dice"><i class="fas fa-dice"></i></div>
+        <div class="floating-bolt"><i class="fas fa-bolt"></i></div>
+        <div class="floating-heart"><i class="fas fa-heart-suit"></i></div>
+        <div class="floating-diamond"><i class="fas fa-diamond-suit"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-neon-pink/20">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="logo-container">
+                    <a href="/">
+                        <img class="h-12" src="images/logo.png" alt="Turbowins logo" />
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="#games" class="nav-link">Games</a>
+                    <a href="#bonuses" class="nav-link">Bonuses</a>
+                    <a href="/about" class="nav-link">About</a>
+                    <a href="#support" class="nav-link">Support</a>
+                </div>
+                <button class="cta-button-small" onclick="redirectToGo()">
+                    Join Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 to-black"></div>
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        
+        <div class="container mx-auto px-4 z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="hero-title mb-2">
+                        TurboWins Casino
+                    </h1>
+                    <div class="mb-6 text-3xl">
+                        <span class="text-neon-pink">&rarr; Turbo Speed Wins &larr;</span>
+                    </div>
+                    
+                    <div class="bonus-box mb-8">
+                        <div class="bonus-header">
+                            <i class="fas fa-gift text-2xl"></i>
+                            <span>Welcome Bonus</span>
+                        </div>
+                        <div class="bonus-main">
+                            200% up to C$1,200
+                        </div>
+                        <div class="bonus-extra">
+                            + 50 Free Spins
+                        </div>
+                        <div class="bonus-cashback">
+                            10% Weekly Cashback
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="cta-button" onclick="redirectToGo()">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Claim Bonus Now
+                        </button>
+                        <button class="cta-button-secondary" onclick="redirectToGo()">
+                            <i class="fas fa-play mr-2"></i>
+                            Play Now
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image-container">
+                    <img src="images/turbowins-hero.png" alt="TurboWins Casino Games" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 relative">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">How to Claim Your Bonus</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="step-title">1. Sign Up</h3>
+                    <p class="step-description">Create your TurboWins account in under 2 minutes</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="step-title">2. Deposit</h3>
+                    <p class="step-description">Make your first deposit of C$20 or more</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="step-title">3. Get Bonus</h3>
+                    <p class="step-description">Receive 200% bonus + 50 free spins instantly</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3 class="step-title">4. Play & Win</h3>
+                    <p class="step-description">Start spinning and winning big prizes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section id="games" class="py-20 bg-gradient-to-b from-black to-casino-purple/20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Featured Games</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="game-card">
+                    <img src="images/duel-at-dawn.jpg" alt="Duel at Dawn" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="game-title">Duel at Dawn</h3>
+                        <button class="game-play-btn" onclick="redirectToGo()">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/express.jpg" alt="Powerboost Money Express" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="game-title">Powerboost Money Express</h3>
+                        <button class="game-play-btn" onclick="redirectToGo()">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/marlin.jpg" alt="Marlin Masters" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="game-title">Marlin Masters</h3>
+                        <button class="game-play-btn" onclick="redirectToGo()">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/panda.jpg" alt="Shaolin Panda" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="game-title">Shaolin Panda</h3>
+                        <button class="game-play-btn" onclick="redirectToGo()">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/cursed-seas.jpg" alt="Cursed Seas" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="game-title">Cursed Seas</h3>
+                        <button class="game-play-btn" onclick="redirectToGo()">Play Now</button>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="images/wanted.jpg" alt="Wanted Dead or a Wild" class="game-image">
+                    <div class="game-overlay">
+                        <h3 class="game-title">Wanted Dead or a Wild</h3>
+                        <button class="game-play-btn" onclick="redirectToGo()">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">About TurboWins Casino</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="content-card mb-12">
+                    <p class="text-lg leading-relaxed mb-6">
+                        TurboWins Casino stands as Canada's premier online gaming destination, delivering an exceptional gambling experience tailored specifically for Canadian players. Licensed and regulated by respected gaming authorities, TurboWins operates with complete transparency and fairness, ensuring every spin, every hand, and every bet meets the highest industry standards.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The platform features an extensive collection of over 2,000 premium games, including the latest video slots, classic table games, live dealer experiences, and progressive jackpots that regularly reach seven-figure payouts. Players can enjoy titles from industry-leading providers, ensuring top-quality graphics, immersive soundtracks, and innovative gameplay mechanics that keep the excitement levels at maximum.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        TurboWins Casino prioritizes player satisfaction through lightning-fast payouts, typically processing withdrawals within 24 hours for verified accounts. The platform supports all major Canadian payment methods, including Interac e-Transfer, credit cards, and popular e-wallets, making deposits and withdrawals seamless and secure.
+                    </p>
+                    <p class="text-lg leading-relaxed">
+                        Security remains paramount at TurboWins, with advanced SSL encryption protecting all player data and financial transactions. The casino employs certified random number generators for all games, ensuring fair play and genuine winning opportunities. Regular audits by independent testing agencies verify game fairness and payout percentages, providing players with complete confidence in their gaming experience.
+                    </p>
+                </div>
+
+                <!-- Game Providers -->
+                <div class="content-card mb-12">
+                    <h3 class="text-2xl font-bold mb-8 text-center neon-text">Game Providers</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                        <div class="provider-card">NetEnt</div>
+                        <div class="provider-card">Microgaming</div>
+                        <div class="provider-card">Play'n GO</div>
+                        <div class="provider-card">Evolution Gaming</div>
+                        <div class="provider-card">Pragmatic Play</div>
+                        <div class="provider-card">Big Time Gaming</div>
+                        <div class="provider-card">Yggdrasil</div>
+                        <div class="provider-card">Red Tiger</div>
+                        <div class="provider-card">Quickspin</div>
+                        <div class="provider-card">Thunderkick</div>
+                        <div class="provider-card">Push Gaming</div>
+                        <div class="provider-card">Nolimit City</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20 bg-gradient-to-b from-casino-purple/20 to-black">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Payment Methods</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="content-card mb-8">
+                    <p class="text-lg leading-relaxed mb-8">
+                        TurboWins Casino supports a comprehensive range of payment methods specifically chosen for Canadian players. All transactions are processed through secure, encrypted channels with industry-standard protection protocols. Deposits are typically instant, while withdrawals are processed within 24-48 hours for verified accounts. The casino maintains strict verification procedures to ensure player security and comply with Canadian financial regulations.
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="payment-table">
+                        <h3 class="text-xl font-bold mb-4 text-neon-pink">Deposit Methods</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-neon-pink/30">
+                                    <th class="text-left py-3">Method</th>
+                                    <th class="text-left py-3">Min/Max</th>
+                                    <th class="text-left py-3">Processing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Interac e-Transfer</td>
+                                    <td class="py-3">C$20 / C$5,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Visa/Mastercard</td>
+                                    <td class="py-3">C$20 / C$2,500</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">PaySafeCard</td>
+                                    <td class="py-3">C$20 / C$1,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Skrill</td>
+                                    <td class="py-3">C$20 / C$10,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">Neteller</td>
+                                    <td class="py-3">C$20 / C$10,000</td>
+                                    <td class="py-3">Instant</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="payment-table">
+                        <h3 class="text-xl font-bold mb-4 text-neon-pink">Withdrawal Methods</h3>
+                        <table class="w-full">
+                            <thead>
+                                <tr class="border-b border-neon-pink/30">
+                                    <th class="text-left py-3">Method</th>
+                                    <th class="text-left py-3">Min/Max</th>
+                                    <th class="text-left py-3">Processing</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Interac e-Transfer</td>
+                                    <td class="py-3">C$50 / C$5,000</td>
+                                    <td class="py-3">24-48 hours</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Bank Transfer</td>
+                                    <td class="py-3">C$100 / C$10,000</td>
+                                    <td class="py-3">3-5 days</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Skrill</td>
+                                    <td class="py-3">C$50 / C$10,000</td>
+                                    <td class="py-3">24 hours</td>
+                                </tr>
+                                <tr class="border-b border-gray-700">
+                                    <td class="py-3">Neteller</td>
+                                    <td class="py-3">C$50 / C$10,000</td>
+                                    <td class="py-3">24 hours</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3">Cheque</td>
+                                    <td class="py-3">C$500 / C$25,000</td>
+                                    <td class="py-3">7-14 days</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Security Features -->
+                <div class="content-card">
+                    <h3 class="text-2xl font-bold mb-6 neon-text">Security Features</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        TurboWins Casino employs military-grade security measures to protect player information and financial transactions. The platform utilizes 256-bit SSL encryption, the same technology used by major banks and financial institutions worldwide. All player data is stored on secure servers with multiple backup systems and 24/7 monitoring to prevent unauthorized access.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The casino maintains strict compliance with Canadian privacy laws and international gaming regulations. Regular security audits are conducted by independent cybersecurity firms to identify and address potential vulnerabilities. Two-factor authentication is available for all player accounts, adding an extra layer of protection for account access and financial transactions.
+                    </p>
+                    <div class="security-badges grid grid-cols-2 gap-4 mt-8">
+                        <div class="badge-item">
+                            <i class="fas fa-shield-alt text-2xl text-neon-pink mb-2"></i>
+                            <span>SSL Encrypted</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-certificate text-2xl text-neon-pink mb-2"></i>
+                            <span>Licensed</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-user-shield text-2xl text-neon-pink mb-2"></i>
+                            <span>2FA Protected</span>
+                        </div>
+                        <div class="badge-item">
+                            <i class="fas fa-check-circle text-2xl text-neon-pink mb-2"></i>
+                            <span>Audited</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIP Program -->
+                <div class="content-card">
+                    <h3 class="text-2xl font-bold mb-6 neon-text">VIP Program Levels</h3>
+                    <p class="text-lg leading-relaxed mb-6">
+                        The TurboWins VIP program rewards loyal players with exclusive benefits and personalized service. Players automatically advance through five distinct levels based on their gaming activity, unlocking increasingly valuable rewards at each tier. VIP members enjoy faster withdrawals, higher deposit limits, exclusive bonuses, and access to premium customer support.
+                    </p>
+                    <div class="vip-levels space-y-4">
+                        <div class="vip-level">
+                            <div class="vip-badge bronze">Bronze</div>
+                            <span>5% Weekly Cashback</span>
+                        </div>
+                        <div class="vip-level">
+                            <div class="vip-badge silver">Silver</div>
+                            <span>7% Weekly Cashback + Monthly Bonus</span>
+                        </div>
+                        <div class="vip-level">
+                            <div class="vip-badge gold">Gold</div>
+                            <span>10% Weekly Cashback + Exclusive Promos</span>
+                        </div>
+                        <div class="vip-level">
+                            <div class="vip-badge platinum">Platinum</div>
+                            <span>12% Weekly Cashback + Personal Manager</span>
+                        </div>
+                        <div class="vip-level">
+                            <div class="vip-badge diamond">Diamond</div>
+                            <span>15% Weekly Cashback + VIP Events</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20 bg-gradient-to-b from-black to-casino-purple/20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Bonuses & Promotions</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="content-card mb-12">
+                    <p class="text-lg leading-relaxed mb-6">
+                        TurboWins Casino offers an extensive range of bonuses and promotions designed to maximize player value and extend gaming sessions. The welcome package provides new players with substantial bonus funds and free spins, while ongoing promotions ensure regular players always have exciting opportunities to boost their bankrolls. All bonuses come with fair and transparent terms, clearly outlined in the casino's bonus policy.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-8">
+                        The casino's promotional calendar features daily, weekly, and monthly offers including reload bonuses, free spin packages, cashback deals, and tournament competitions. High-value players can access exclusive VIP promotions with personalized bonus offers, higher limits, and premium rewards. Seasonal promotions and special event bonuses provide additional opportunities for enhanced gameplay throughout the year.
+                    </p>
+                    
+                    <div class="bonus-breakdown">
+                        <h3 class="text-xl font-bold mb-6 text-neon-pink">Current Bonus Offers</h3>
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-neon-pink mt-1 mr-3"></i>
+                                <span><strong>Welcome Bonus:</strong> 200% match up to C$1,200 + 50 free spins on selected slots</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-neon-pink mt-1 mr-3"></i>
+                                <span><strong>Weekly Cashback:</strong> 10% cashback on net losses, credited every Monday</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-neon-pink mt-1 mr-3"></i>
+                                <span><strong>Reload Bonus:</strong> 50% match up to C$500 every Friday</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-neon-pink mt-1 mr-3"></i>
+                                <span><strong>Free Spin Tuesday:</strong> 25 free spins on featured slot games</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-neon-pink mt-1 mr-3"></i>
+                                <span><strong>High Roller Bonus:</strong> 100% match up to C$2,500 for deposits over C$1,000</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="bonus-terms">
+                            <h4 class="text-lg font-bold mb-4 text-neon-pink">Bonus Terms & Conditions</h4>
+                            <table class="w-full border border-gray-700">
+                                <thead>
+                                    <tr class="bg-casino-purple/30">
+                                        <th class="text-left p-3 border-b border-gray-700">Bonus Type</th>
+                                        <th class="text-left p-3 border-b border-gray-700">Wagering Requirement</th>
+                                        <th class="text-left p-3 border-b border-gray-700">Max Bet</th>
+                                        <th class="text-left p-3 border-b border-gray-700">Validity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-3">Welcome Bonus</td>
+                                        <td class="p-3">35x (bonus + deposit)</td>
+                                        <td class="p-3">C$5 per spin</td>
+                                        <td class="p-3">30 days</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-3">Free Spins</td>
+                                        <td class="p-3">40x winnings</td>
+                                        <td class="p-3">C$5 per spin</td>
+                                        <td class="p-3">7 days</td>
+                                    </tr>
+                                    <tr class="border-b border-gray-700">
+                                        <td class="p-3">Reload Bonus</td>
+                                        <td class="p-3">30x bonus</td>
+                                        <td class="p-3">C$5 per spin</td>
+                                        <td class="p-3">14 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="p-3">Cashback</td>
+                                        <td class="p-3">1x cashback</td>
+                                        <td class="p-3">No limit</td>
+                                        <td class="p-3">7 days</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Customer Support</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="support-title">Live Chat</h3>
+                    <p class="support-description">24/7 instant support via live chat</p>
+                    <div class="support-availability">Available Now</div>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="support-title">Email Support</h3>
+                    <p class="support-description">support@turbowins.ca</p>
+                    <div class="support-availability">Response within 2 hours</div>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="support-title">Phone Support</h3>
+                    <p class="support-description">1-800-TURBO-WIN</p>
+                    <div class="support-availability">Daily 8 AM - 12 AM EST</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20 bg-gradient-to-b from-casino-purple/20 to-black">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Other Promotions</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="promo-title">Tournament Madness</h3>
+                    <p class="promo-description">Compete in weekly slot tournaments with C$10,000 prize pools. Climb the leaderboard and claim your share of massive rewards.</p>
+                    <button class="promo-button" onclick="redirectToGo()">Join Tournament</button>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="promo-title">Daily Drops</h3>
+                    <p class="promo-description">Random bonus drops every day! Log in daily for surprise bonuses, free spins, and exclusive offers delivered straight to your account.</p>
+                    <button class="promo-button" onclick="redirectToGo()">Claim Daily</button>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="promo-title">Refer a Friend</h3>
+                    <p class="promo-description">Earn C$50 bonus for every friend you refer who makes their first deposit. No limit on referrals - the more friends, the more bonuses!</p>
+                    <button class="promo-button" onclick="redirectToGo()">Refer Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+    
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="feature-image lg:order-2">
+                    <img src="images/vip.png" alt="VIP Program" class="rounded-lg shadow-2xl">
+                </div>
+                <div class="feature-content lg:order-1">
+                    <h2 class="section-title mb-8">VIP Elite Program</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        Unlock the ultimate gaming experience with TurboWins VIP Elite Program. Five exclusive levels await dedicated players, each offering enhanced cashback rates, exclusive promotional codes, and personalized service from dedicated account managers. VIP members enjoy priority customer support, faster withdrawals, and access to exclusive tournaments.
+                    </p>
+                    <p class="text-lg leading-relaxed mb-8">
+                        Elite VIP members receive custom bonus packages tailored to their gaming preferences, invitations to exclusive events, and special birthday rewards. The program recognizes player loyalty with increasingly valuable benefits, including luxury gifts, vacation packages, and VIP experiences at premium destinations.
+                    </p>
+                    <button class="cta-button" onclick="redirectToGo()">
+                        <i class="fas fa-crown mr-2"></i>
+                        Join VIP Program
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-20 bg-gradient-to-b from-black to-casino-purple/20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Trust & Licensing</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                <div class="trust-badge">
+                    <i class="fas fa-certificate text-4xl text-neon-pink mb-4"></i>
+                    <h3 class="trust-title">Licensed</h3>
+                    <p class="trust-description">Curacao Gaming Authority</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt text-4xl text-neon-pink mb-4"></i>
+                    <h3 class="trust-title">Secure</h3>
+                    <p class="trust-description">256-bit SSL Encryption</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-check-circle text-4xl text-neon-pink mb-4"></i>
+                    <h3 class="trust-title">Fair Play</h3>
+                    <p class="trust-description">RNG Certified</p>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield text-4xl text-neon-pink mb-4"></i>
+                    <h3 class="trust-title">Responsible</h3>
+                    <p class="trust-description">Player Protection</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Frequently Asked Questions</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I claim the welcome bonus?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Simply register a new account, make your first deposit of C$20 or more, and the 200% bonus up to C$1,200 plus 50 free spins will be automatically credited to your account. The bonus must be wagered 35 times before withdrawal.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods are accepted for Canadian players?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>TurboWins accepts Interac e-Transfer, Visa, Mastercard, PaySafeCard, Skrill, and Neteller. All methods support Canadian dollars, and deposits are typically processed instantly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long do withdrawals take to process?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Withdrawal processing times vary by method: Interac e-Transfer and e-wallets take 24-48 hours, bank transfers take 3-5 business days, and cheques take 7-14 business days. VIP members enjoy priority processing.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is TurboWins Casino licensed and regulated?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, TurboWins Casino operates under a valid gaming license from the Curacao Gaming Authority. All games are regularly audited for fairness, and the casino employs advanced security measures to protect player information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-neon-pink/20 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 neon-text">TurboWins</h3>
+                    <p class="text-gray-400 mb-4">Crypto, fiat, free spins...</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#games" class="footer-link">Games</a></li>
+                        <li><a href="#bonuses" class="footer-link">Bonuses</a></li>
+                        <li><a href="#about" class="footer-link">About</a></li>
+                        <li><a href="#support" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2">
+                        <li class="footer-link">Live Chat 24/7</li>
+                        <li class="footer-link">support@turbowins.ca</li>
+                        <li class="footer-link">1-800-TURBO-WIN</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Responsible Gaming</h4>
+                    <div class="responsible-gaming">
+                        <i class="fas fa-exclamation-triangle text-neon-pink mb-2"></i>
+                        <p class="text-sm text-gray-400 mb-4">Gambling can be addictive. Play responsibly.</p>
+                        <div class="text-sm space-y-1">
+                            <p>Problem Gambling Help:</p>
+                            <p>1-866-531-2600</p>
+                            <p>ConnexOntario.ca</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 TurboWins Casino. All rights reserved. | 18+ Only | Terms & Conditions Apply</p>
+                <p class="text-sm mt-2">Wagering requirements apply to all bonuses. Please gamble responsibly.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Redirect function for all CTA buttons
+        function redirectToGo() {
+            window.location.href = '/go';
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', function() {
+                const faqItem = this.parentElement;
+                const answer = faqItem.querySelector('.faq-answer');
+                const icon = this.querySelector('i');
+                
+                faqItem.classList.toggle('active');
+                
+                if (faqItem.classList.contains('active')) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    answer.style.maxHeight = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // Parallax effect for hero section
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('#hero');
+            const speed = scrolled * 0.5;
+            
+            if (parallax) {
+                parallax.style.transform = `translateY(${speed}px)`;
+            }
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
