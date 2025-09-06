@@ -1,0 +1,91 @@
+/* slots-styles.css: Custom styles for slots.html */
+
+.slots-intro {
+    text-align: center;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.slots-grid {
+    max-width: 1100px;
+    margin: 0 auto 2rem auto;
+}
+
+.slots-grid .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.slot-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 1rem;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.slot-card:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+.slot-card img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+}
+.slot-card h3 {
+    margin: 0.5rem 0 0.75rem 0;
+    font-size: 1.1rem;
+}
+.cta {
+    background: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.cta:hover {
+    background: #e67c00;
+}
+
+.slots-article {
+    max-width: 800px;
+    margin: 0 auto 2.5rem auto;
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.slots-article h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.slots-article article h3 {
+    margin-top: 1.2rem;
+    color: #2d7be5;
+}
+.slots-article article p {
+    margin-bottom: 1rem;
+}
+.deposit-cta {
+    text-align: center;
+    margin-top: 2rem;
+}
+.deposit-btn {
+    background: #2d7be5;
+    color: #fff;
+    padding: 0.8rem 2.2rem;
+    border-radius: 8px;
+    font-size: 1.15rem;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(45,123,229,0.12);
+    transition: background 0.2s;
+}
+.deposit-btn:hover {
+    background: #1a5bb8;
+}
