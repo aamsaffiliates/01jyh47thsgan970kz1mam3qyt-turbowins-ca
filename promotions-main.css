@@ -1,0 +1,131 @@
+/* promotions-main.css: Styles for the main section of the Promotions page */
+
+main {
+    
+    padding: 40px 60px;
+    min-height: 80vh;
+}
+
+.promotions-grid h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 32px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+    margin-bottom: 40px;
+}
+
+.promo-card {
+    background: #3e003ac5;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(30, 60, 90, 0.08);
+    padding: 28px 20px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+}
+.promo-card:hover {
+    box-shadow: 0 4px 24px rgba(30, 60, 90, 0.16);
+}
+.promo-card h2 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+}
+.promo-card p {
+    color: #fbfbfb;
+    font-size: 1rem;
+}
+
+.wagering-details {
+    margin: 48px 0;
+}
+.wagering-details h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+.wagering-details table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #4e0033;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 8px rgba(30, 60, 90, 0.07);
+}
+.wagering-details th, .wagering-details td {
+    padding: 14px 10px;
+    text-align: left;
+    border-bottom: 1px solid #4f0029;
+}
+.wagering-details th {
+    background: #c50087;
+    color: #1a2a4f;
+}
+.wagering-details tr:last-child td {
+    border-bottom: none;
+}
+
+.faq-section {
+    margin: 48px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(30, 60, 90, 0.07);
+    padding: 32px 24px;
+}
+.faq-section h2 {
+    color: #1a2a4f;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+.faq h3 {
+    color: #0e1e38;
+    margin-top: 18px;
+    font-size: 1.1rem;
+}
+.faq p {
+    color: #3a4a6a;
+    margin-bottom: 10px;
+}
+
+.bonus-article {
+    margin: 48px 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px rgba(30, 60, 90, 0.07);
+    padding: 32px 24px;
+}
+.bonus-article h2 {
+    color: #1a2a4f;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+.bonus-article article p {
+    color: #3a4a6a;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    main {
+        padding: 18px 0;
+    }
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 18px;
+    }
+    .faq-section, .bonus-article {
+        padding: 18px 8px;
+    }
+}
